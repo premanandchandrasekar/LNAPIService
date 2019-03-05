@@ -1,0 +1,14 @@
+<html>
+   <head>
+    <title>Flask app</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/test.css') }}">
+   </head>
+   <body>
+      <form action = "http://localhost:5000/report" method = "POST">
+         <label>KEY:</label>
+         <input type="text" name="key" value="enter key"/>
+         <br>
+         <input type = "submit"/>
+      </form>
+   </body>
+</html>
