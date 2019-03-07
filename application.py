@@ -18,7 +18,7 @@ def gen_report():
         cursor = cnxn.cursor()
         key = request.form['key']
         res = cursor.execute("SELECT * FROM QpSector where qp_id=" + key)
-        # cnxn.commit()
+        cnxn.commit()
         op = []
         for row in res:
             op.append(list(row))
